@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+      
+        android:divider="@drawable/vertical_divider"
+    android:dividerPadding="12dip"
+    android:showDividers="middle"
+    
+            android:orientation="horizontal" 
+          >
+
+ <LinearLayout 
+        android:layout_width="wrap_content"
+         android:layout_height="fill_parent"
+  
+    
+            android:orientation="horizontal" 
+           
+          >
+ <CheckBox 
+        android:id="@+id/checkBox_id"
+        android:layout_marginLeft="3dp"
+          android:layout_marginRight="3dp"
+        android:layout_width="35dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+      
+      android:background="@drawable/checkbox_gradient"
+        android:padding="1dp" 
+        
+
+        >
+      
+        </CheckBox>
+    </LinearLayout>
+
+ <RelativeLayout
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent" >
+
+     <ImageView
+         android:id="@+id/profile_pic_id"
+         android:layout_width="50dp"
+         android:layout_height="50dp"
+         android:background="@drawable/ic_action_user"
+         android:paddingLeft="15dp"
+         android:paddingRight="15dp" />
+
+     <TextView
+         android:id="@+id/name_id"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="3dp"
+         android:layout_toRightOf="@+id/profile_pic_id"
+         android:paddingBottom="3dp"
+         android:text="txt"
+         android:textSize="20sp" />
+
+     <TextView
+         android:id="@+id/gender_id"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/name_id"
+         android:layout_below="@+id/name_id"
+         android:text="sex"
+         android:textSize="16sp" />
+
+     <TextView
+         android:id="@+id/mob_id"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/name_id"
+         android:layout_alignBottom="@+id/name_id"
+         android:layout_alignParentRight="true"
+  android:layout_marginRight="7dip"
+           android:text="mob"
+         android:textSize="16sp" />
+
+     <ImageView
+         android:id="@+id/see_detail1"
+         android:layout_width="20dp"
+         android:layout_height="20dp"
+         android:layout_alignBottom="@+id/verificiation_code_id"
+         android:layout_alignParentRight="true"
+           android:layout_marginRight="7dip"
+             android:layout_marginLeft="4dip"
+                 android:layout_marginBottom="4dip"
+         android:background="@drawable/arrowhead_right" />
+
+     <EditText
+         android:id="@+id/verificiation_code_id"
+         android:layout_width="120dp"
+         android:layout_height="28dp"
+         android:layout_below="@+id/mob_id"
+         android:layout_marginBottom="4dip"
+         android:layout_toLeftOf="@+id/see_detail1"
+         android:background="@drawable/edittext_selector"
+         android:ems="10"
+         android:hint="@string/OTP"
+         android:inputType="number"
+         android:paddingLeft="4dip"
+         android:textColor="@color/grey_color"
+         android:textColorHint="@color/dark_green_color"
+         android:textSize="18sp" />
+
+ </RelativeLayout>
+
+</LinearLayout>

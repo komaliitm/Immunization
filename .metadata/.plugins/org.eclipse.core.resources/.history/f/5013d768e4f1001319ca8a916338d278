@@ -1,0 +1,175 @@
+package com.social.healthometer.model;
+
+import java.sql.Date;
+
+
+/**
+ * Represents an item in a ToDo list
+ */
+public class TodoItem {
+
+	/**
+	 * Item text
+	 */
+	@com.google.gson.annotations.SerializedName("ChildName")
+	private String mText;
+	
+	@com.google.gson.annotations.SerializedName("sex")
+	private String mSex;
+	
+	@com.google.gson.annotations.SerializedName("DOB")
+	private String mDOB;
+
+	@com.google.gson.annotations.SerializedName("RegCode")
+	private String regCode;
+	
+	@com.google.gson.annotations.SerializedName("notify_num")
+	private String mNotifyNumber;
+	
+	/**
+	 * Item Id
+	 */
+	@com.google.gson.annotations.SerializedName("id")
+	private String mId;
+
+	/**
+	 * Indicates if the item is completed
+	 */
+	@com.google.gson.annotations.SerializedName("complete")
+	private boolean mComplete;
+
+	//private boolean codeFocus ;
+	/**
+	 * ToDoItem constructor
+	 */
+	public TodoItem() {
+
+	}
+	
+	
+     
+	 public boolean isChecked() {
+         return checkbox;
+     }
+
+     public void setChecked(boolean checkbox) {
+         this.checkbox = checkbox;
+     }
+
+	private boolean checkbox = false;
+	public void toggleChecked() {
+		checkbox = !checkbox;
+    }
+	
+	@Override
+	public String toString() {
+		return getText();
+	}
+
+	/**
+	 * Initializes a new ToDoItem
+	 * 
+	 * @param text
+	 *            The item text
+	 * @param id
+	 *            The item id
+	 */
+	public TodoItem(String text, String id) {
+		this.setText(text);
+		this.setId(id);
+	}
+
+	/**
+	 * Returns the item text
+	 */
+	public String getText() {
+		return mText;
+	}
+
+	/**
+	 * Sets the item text
+	 * 
+	 * @param text
+	 *            text to set
+	 */
+	public final void setText(String text) {
+		mText = text;
+	}
+	
+	public String getSex() {
+		return mSex;
+	}
+	
+	public final void setSex(String sex) {
+		mSex = sex;
+	}
+	
+	public final void setNotifyNumber(String number) {
+		mNotifyNumber = number;
+	}
+	
+	public String getNotifyNumber() {
+		return mNotifyNumber;
+	}
+	
+	public final void setRegCode(String number) {
+		regCode = number;
+	}
+	
+	public String getRegCode() {
+		return regCode;
+	}
+	
+	public final void setMobileNumber(String number) {
+		mNotifyNumber = number;
+	}
+	
+	public String getMobileNumber() {
+		return mNotifyNumber;
+	}
+	
+	public final void setDateOfBirth(Date dob) {
+		//mDOB = dob.toString();
+		mDOB = "2012-03-03";
+	}
+	
+	public Date getDateOfBirth() {		
+		return Date.valueOf("2012-03-03");
+	}
+
+	/**
+	 * Returns the item id
+	 */
+	public String getId() {
+		return mId;
+	}
+
+	/**
+	 * Sets the item id
+	 * 
+	 * @param id
+	 *            id to set
+	 */
+	public final void setId(String id) {
+		mId = id;
+	}
+
+	/**
+	 * Indicates if the item is marked as completed
+	 */
+	public boolean isComplete() {
+		return mComplete;
+	}
+
+	/**
+	 * Marks the item as completed or incompleted
+	 */
+	public void setComplete(boolean complete) {
+		mComplete = complete;
+	}
+
+	@Override
+	public boolean equals(Object o) {
+		return o instanceof TodoItem && ((TodoItem) o).mId == mId;
+	}
+}

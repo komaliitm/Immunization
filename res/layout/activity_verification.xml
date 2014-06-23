@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/main_menu_background"
+    tools:context=".VerificationActivity" >
+
+      
+       
+       <LinearLayout
+        android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:layout_marginLeft="5dp"
+          android:layout_marginRight="5dp"
+          android:layout_gravity="center"
+            android:orientation="vertical" 
+            
+          >
+    	
+    	<LinearLayout
+        android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+
+          android:layout_gravity="center"
+          android:weightSum="2"
+            android:orientation="horizontal" 
+          >
+          
+    	  		<TextView
+      			  android:id="@+id/pending_text_id"
+     			   android:layout_width="0dp"
+    			    android:layout_height="wrap_content"
+    			    android:text="@string/Pending"
+    			    android:textColor="@color/white_color"
+   				     android:gravity="center"
+   				     android:padding="7dp"
+    				    android:layout_weight="1"
+                   
+   				    android:clickable="true"
+   				       android:background="@drawable/dark_red_gradient"
+   				     android:textAppearance="?android:attr/textAppearanceMedium" />
+    	  	
+    	  	<TextView
+        android:id="@+id/verified_text_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Verified"
+        android:textColor="@color/white_color"
+          android:padding="8dp"
+         android:layout_weight="1"
+        android:gravity="center"
+                   
+       android:clickable="true"
+          android:background="@drawable/dark_green_gradient"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    	  	
+    	  	</LinearLayout>
+    	  	<FrameLayout 
+  
+ android:id="@+id/frame_container"
+         android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    		
+
+	
+	   </FrameLayout>
+	    </LinearLayout>
+</LinearLayout>

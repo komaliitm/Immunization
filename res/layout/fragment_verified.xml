@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<LinearLayout 
+      xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+
+       <LinearLayout
+        android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:layout_marginTop="10dp"
+        
+          android:layout_gravity="center"
+            android:orientation="vertical" 
+          >	  	
+    	      <LinearLayout
+        android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+        android:background="@drawable/darkblue_gradient"
+         android:gravity="left"
+          android:layout_gravity="center"
+            android:orientation="horizontal" 
+            
+          >
+    	          <TextView
+    	              android:text="Verified List"
+    	             android:textColor="@color/white_color"
+    	              android:layout_width="wrap_content"
+    	              android:layout_height="wrap_content"
+    	              android:layout_gravity="center"
+    	              android:layout_marginTop="2dp"
+    	             
+    	                 android:layout_marginBottom="2dp"
+    	                 android:textSize="24sp"
+    	                
+    	                 
+    	              />
+    	          
+    	          <LinearLayout
+    	               android:gravity="right"
+    	                 android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+    	               >
+    	          <Button 
+    	  	    android:id="@+id/menu_button_id"
+    	  	      android:textSize="15sp"
+    	  		   android:layout_width="wrap_content"
+       			android:layout_height="30dp"
+       			  android:gravity="center"
+       			   android:layout_marginTop="7dp"
+    	                 android:layout_marginBottom="7dp"
+    	                   android:layout_marginRight="4dp"
+ 					  android:background="@drawable/button_selector"
+        			 android:text="@string/Menu"
+        			    android:textColor="@color/white_color"
+         
+    	  	    />
+    	          </LinearLayout>
+          		
+          </LinearLayout>
+          <LinearLayout 
+                 android:gravity="center"
+    	                 android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+          android:background="@drawable/light_grey_gradient" 
+              >
+    	<SearchView
+    	    android:id="@+id/searchView1"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="30dp"
+    	     android:layout_marginLeft="6dp"
+    	     android:layout_marginRight="6dp"
+    	    android:background="@drawable/white_gradient" 
+    	     android:layout_marginTop="6dp"
+    	     android:layout_marginBottom="6dp"
+    	     >
+
+    	</SearchView>
+    	</LinearLayout>
+    	 <ListView
+        android:id="@+id/listverified"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/medium_green_color" 
+      android:alpha=".8"
+        android:layout_marginTop="2dp"
+            
+            >
+            </ListView> 
+    
+     
+    
+    	  </LinearLayout>
+</LinearLayout>

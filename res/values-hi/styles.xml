@@ -1,0 +1,28 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+     <style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!-- API 14 theme customizations can go here. -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+ 
+    	
+    	<item name="android:textColor">#FF000000</item>
+    	<item name="android:textColorHighlight">#FFFFFFFF</item>
+ 
+    	
+    </style>
+<color name="redlist_color">#F25F5F</color>
+     <color name="light_red_color">#F8B0C0</color>
+     <color name="dark_red_color">#F30A35</color>
+	 <color name="light_green_color">#B2F7B1</color>
+	 <color name="dark_green_color">#0A6F11</color>
+	 <color name="white_color">#FFFFFF</color>
+	 <color name="light_blue_color">#3FB4EB</color>
+</resources>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+ android:id="@+id/add_detail_fragment"
+      android:layout_width="match_parent"
+    android:layout_height="fill_parent">
+
+
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    
+    <TextView
+        android:id="@+id/add_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/add_details"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="24sp" 
+          android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/enter_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/gender"
+        android:layout_below="@+id/add_details"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="@string/enter_name"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+	
+      <LinearLayout android:orientation="horizontal" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:id="@+id/gender"
+         android:layout_below="@+id/enter_name"
+          
+        android:layout_marginTop="21dp"
+        android:layout_marginLeft="25dp"
+         android:layout_marginRight="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        >
+
+        <TextView 
+            android:id="@+id/textView2"
+            android:layout_weight="2"
+        	android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            	android:gravity="left"
+            android:text="@string/sex"
+           
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/male"
+            android:onClick="MaleSelected" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/female"
+            android:onClick="FemaleSelected" />
+
+    </LinearLayout>
+    
+    <EditText
+        android:id="@+id/enter_dob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+      
+        android:layout_alignRight="@+id/gender"
+        android:layout_below="@+id/gender"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
+      
+        android:hint="@string/enter_dob"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/enter_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/enter_dob"
+        android:layout_alignRight="@+id/gender"
+        android:layout_below="@+id/enter_dob"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:hint="@string/enter_num"
+        android:inputType="phone" />
+    
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/add_details"
+        android:layout_alignRight="@+id/add_details"
+        android:layout_below="@+id/enter_age"
+        android:layout_marginTop="48dp"
+        android:onClick="SubmitClicked"
+        android:text="@string/submit" />
+
+    <EditText
+        android:id="@+id/enter_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/enter_phone"
+        android:layout_alignRight="@+id/enter_phone"
+        android:layout_below="@+id/enter_phone"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="@string/enter_age"
+        android:inputType="number" />
+    
+</RelativeLayout>
+</ScrollView>
